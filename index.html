@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datepicker UI</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <div class="date-header">
-        <div class="date-input">
-            <input type="text" placeholder="dd" maxlength="2">
-            /
-            <input type="text" placeholder="mm" maxlength="2">
-            /
-            <input type="text" placeholder="yyyy" maxlength="4">
-        </div>
 
-        <div class="date-icon"></div>
+<body>
+    <div class="container">
+        <div class="date-header">
+            <div class="date-inputs">
+                <input type="text" id="day-input" placeholder="dd" maxlength="2">
+                /
+                <input type="text" id="month-input" placeholder="mm" maxlength="2">
+                /
+                <input type="text" id="year-input" placeholder="yyyy" maxlength="4">
+            </div>
+            <button class="date-icon">
+                <img src="./assets/date-svgrepo-com.svg" alt="date">
+            </button>
+        </div>
     </div>
 </body>
+
 </html>

@@ -1,13 +1,44 @@
-.date-header {
-    border: 1px solid red;
+html {
+    box-sizing: border-box;
 }
 
-.date-input>input {
-    border: none;
-    width: 2em;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 30%;
+}
+
+.date-header {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 5%;
+}
+
+.date-inputs {
     display: inline;
 }
-.date-input>input:last-child {
-    width: 4em;
+
+.date-inputs>input {
+    border: none;
+    width: 25%;
+    margin: 3% 0;
+}
+.date-inputs>input:last-child {
 }
 
+.date-icon {
+    border-inline-start: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 0 5%;
+}
+
+.date-icon>img {
+    width: 90%;
+}
