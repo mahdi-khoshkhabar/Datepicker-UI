@@ -1,0 +1,13 @@
+.date-header {
+    border: 1px solid red;
+}
+
+.date-input>input {
+    border: none;
+    width: 2em;
+    display: inline;
+}
+.date-input>input:last-child {
+    width: 4em;
+}
+
