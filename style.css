@@ -7,8 +7,21 @@ html {
     padding: 0;
 }
 
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
 .container {
     width: 30%;
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2cqh;
 }
 
 .date-header {
@@ -16,6 +29,7 @@ html {
     display: flex;
     flex-direction: row;
     padding-inline-start: 5%;
+    font-size: 7cqw;
 }
 
 .date-inputs {
@@ -23,11 +37,15 @@ html {
 }
 
 .date-inputs>input {
+    --input-width: 17%;
     border: none;
-    width: 25%;
+    width: var(--input-width);
     margin: 3% 0;
+    font-size: inherit;
 }
+
 .date-inputs>input:last-child {
+    width: calc(var(--input-width) * 2);
 }
 
 .date-icon {
@@ -35,10 +53,71 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    padding: 0 5%;
+    width: 50%;
+    padding: 0 2%;
+    margin-inline-start: 5%;
 }
 
 .date-icon>img {
-    width: 90%;
+    width: 70%;
+}
+
+.date-header>button {
+    background-color: inherit;
+    border: none;
+    border-inline-start: 1px solid black;
+    cursor: pointer;
+}
+
+.date-table {
+    border: 1px solid green;
+    height: 100%;
+    font-size: 7cqw;
+}
+
+.month-selector {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3cqw 0;
+}
+
+.month-selector>button {
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month-selector>button>img {
+    width: 10cqw;
+}
+
+.day-selector {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.day-selector table {
+    text-align: center;
+}
+
+.day-selector :is(table, td) {
+    border: 1px solid plum;
+    border-collapse: collapse;
+}
+.day-selector table:first-child {
+    border: none;
+}
+
+.day-selector button {
+    font-size: inherit;
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    padding: 3cqw 0;
 }
